@@ -86,7 +86,7 @@ class YouTube(Directive):
         if 'align' in self.options:
             align = self.options['align']
 
-        url = 'http://www.youtube.com/embed/%s' % videoID
+        url = 'https://www.youtube.com/embed/%s' % videoID
         div_block = '<div class="youtube" align="%s">' % align
         embed_block = '<iframe width="%s" height="%s" src="%s" '\
                       'frameborder="0"></iframe>' % (width, height, url)
@@ -144,7 +144,7 @@ class Vimeo(Directive):
         if 'align' in self.options:
             align = self.options['align']
 
-        url = 'http://player.vimeo.com/video/%s' % videoID
+        url = 'https://player.vimeo.com/video/%s' % videoID
         div_block = '<div class="vimeo" align="%s">' % align
         embed_block = '<iframe width="%s" height="%s" src="%s" '\
                       'frameborder="0"></iframe>' % (width, height, url)
